@@ -3,7 +3,6 @@ import { CgMenu } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 import { Fade } from "react-reveal";
 import { StoreContext } from "../context/AppContext";
-import { useHref } from "react-router-dom";
 
 let Links = [
   { name: "მთავარი", link: "/", section: "main" },
@@ -18,8 +17,6 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
   const { handleLinkClick } = useContext(StoreContext);
-
-  const pageRef = useHref(null);
 
   const controlNavbar = () => {
     if (window.scrollY > 100) {
@@ -94,8 +91,14 @@ const Header = () => {
               )}
               {open && (
                 <Fade top>
-                  <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+                  <li
+                    key={link.name}
+                    className="md:ml-8 text-xl md:my-0 my-7"
+                    onClick={() => setOpen(false)}
+                  >
                     <a
+                      onClick={handleLinkClick}
+                      data-section-id={link.section}
                       href={link.link}
                       className="text-[#ffffff] hover:text-gray-400 duration-500"
                     >

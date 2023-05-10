@@ -11,12 +11,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.0",
     "alk-rounded-mtav-med": "^1.0.0",
     "bpg-arial": "^1.0.0",
     "bpg-nino-mtavruli-bold": "^1.0.0",
@@ -34,7 +29,6 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.14",

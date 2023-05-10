@@ -8,6 +8,7 @@ export default {
         xl2: "1440px",
         sm: "310px",
         sm2: "850px",
+        xsm:'360px'
       },
       colors: {
         mainRed: "#f14342",

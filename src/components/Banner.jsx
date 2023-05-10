@@ -26,19 +26,14 @@ const Banner = () => {
         </h1>
         <div className="relative pt-8">
           <Fade left>
-          <button className="relative z-10 bg-red-700 text-white font-bold py-4 px-4 rounded transition duration-200 overflow-hidden">
-  <Link to="/პროექტები" className="inline-block transition-transform transform-gpu text-xl">
-    განხორციელებული პროექტები
-  </Link>
-  <svg
-    className="inline-block w-5 h-5 ml-1 fill-current transition-all duration-200 transform-gpu rotate-0"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path d="M17.6 11.4l-6 6c-.2.2-.4.3-.6.3s-.4-.1-.6-.3l-6-6C4.1 11 4 10.7 4 10.4s.1-.6.3-.8l.7-.7c.2-.2.5-.3.8-.3s.6.1.8.3L12 15.6l5.6-5.6c.2-.2.5-.3.8-.3s.6.1.8.3l.7.7c.2.2.3.5.3.8s-.1.6-.3.8z" />
-  </svg>
-</button>
-
+            <button className="relative z-10  bg-red-700 text-white font-bold rounded transition duration-200 overflow-hidden  xsm:w-[85%] xsm:p-2 xsm:text-md sm:py-4 sm:px-4 sm:text-lg  sm:w-full md:w-full md:px-4 md:py-4">
+              <Link
+                to="/პროექტები"
+                className="inline-block transition-transform transform-gpu"
+              >
+                განხორციელებული პროექტები
+              </Link>
+            </button>
           </Fade>
         </div>
       </div>
